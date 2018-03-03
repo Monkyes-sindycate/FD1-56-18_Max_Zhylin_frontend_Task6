@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>13123131231231</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+        }
+        div:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .slider{
+            height: 600px;
+            background: black;
+            width: 100%;
+            margin: auto;
+        }
+        .slider_central{
+            position: absolute;
+            left: 0;right: 0;
+            margin: auto;
+            width: 90%;
+            height: 600px;
+            background-image: url("../img_task6/slider-img-01.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+            z-index: 0;
+        }
+        .slider_text{
+            font-family: "Open Sans";
+            position: absolute;
+            top: 200px;right: 0;left: 0;
+            text-align: center;
+            margin: auto;
+            max-width: 700px;
+            min-width:150px;
+            color: #eeeeee;
+        }
+        .slider_text h4{
+            font-size: 56px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .slider_text p{
+            font-size: 30px;
+        }
+        .slider_pagination{
+            width:100%;
+            text-align: center;
+        }
+        .slider_pagination ul {
+            position: absolute;
+            right: 0;
+            bottom: 30px;
+        }
+        .slider_pagination a{
+            background: rgba(238, 238, 238, 0.7);
+            margin: 10px;
+            border-radius: 3px;
+        }
+        .slider_pagination a:hover{
+            background: rgba(238, 101, 10, 0.79);
+        }
+        .slider_pagination li {
+            display: inline;
+            margin-right: 17px;
+        }
+        .button_left{
+            z-index: 2;
+            width: 28px;
+            height: 60px;
+            background-image: url("../img_task6/prev-next-sprite.png");
+            background-position: left;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 7%;
+            padding-top: 530px;
+        }
+        .button_right{
+            z-index: 2;
+            width: 28px;
+            height: 60px;
+            background-image: url("../img_task6/prev-next-sprite.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 7%;
+            padding-top: 530px;
+        }
+    </style>
+</head>
+<body>
+<div class="slider">
+    <a href="#" class="button_left" title="Предыдущий слайд"> </a>
+    <a href="#" class="button_right" title="Следующий слайд"> </a>
+    <div class="slider_central">
+        <div class="slider_text">
+            <hr size="3" color="#eeeeee" >
+            <h4>КОМФОРТНАЯ ОДЕЖДА</h4>
+            <hr size="3" color="#eeeeee">
+            <p> для всех видов  спорта</p>
+        </div>
+        <div class="slider_pagination">
+            <ul class="slider_pagination">
+                <a href="#"><li></li></a>
+                <a href="#"><li></li></a>
+                <a href="#"><li></li></a>
+                <a href="#"><li></li></a>
+            </ul>
+        </div>
+    </div>
+</div >
+</body>
+</html>
